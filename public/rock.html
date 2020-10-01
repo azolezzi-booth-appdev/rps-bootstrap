@@ -5,35 +5,49 @@
 
   <!-- Expand the number of characters we can use in the document beyond basic ASCII 🎉 -->
   <meta charset="utf-8">
+<!-- Expand the number of characters we can use in the document beyond basic ASCII 🎉 -->
+<meta charset="utf-8">
 
-  <link rel="stylesheet" href="/my_styles.css">
+<!-- Connect Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<!-- Connect Bootstrap JavaScript and its dependencies -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+<!-- Connect Font Awesome -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+
+<!-- Make it responsive to small screens -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
+
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <div class="container">
     <div class="row mb-medium">
-      <div class="one-third">
-        <a class="button" href="/rock">
+      <div class="col-md-4">
+        <a class="btn btn-warning" href="/rock">
           Play Rock
         </a>
       </div>
 
-      <div class="one-third">
-        <a class="button" href="/paper">
+      <div class="col-md-4">
+        <a class="btn btn-info" href="/paper">
           Play Paper
         </a>
       </div>
 
-      <div class="one-third">
-        <a class="button" href="/scissors">
+      <div class="col-md-4">
+        <a class="btn btn-primary" href="/scissors">
           Play Scissors
         </a>
       </div>
     </div>
 
     <div class="row mb-medium">
-      <div class="one-half">
+      <div class="col-md-6">
         <div class="player-card centered">
           <h2>
             <em>We</em> <strong>played</strong> <a href="https:/www.google.com">rock</a>!
@@ -41,7 +55,7 @@
         </div>
       </div>
 
-      <div class="one-half">
+      <div class="col-md-6">
         <div class="computer-card centered">
           <h2>
             They played paper!
@@ -51,7 +65,10 @@
     </div>
 
     <div class="row-center mb-medium">
-      <div class="two-thirds">
+      <div class="col-md-2">
+      </div>
+      
+      <div class="col-md-8">
         <div class="outcome-card centered">
           <h2>
             We lost!
